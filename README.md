@@ -12,4 +12,4 @@ The main changes that have been implemented since that version are:
 
 The clearance between the inner diameter of the ISO200 port and stage 3 is 6.8 mm
 
-Refer to [[http://literator.colin.merkel.is/do7uO]] for calculations of the clearance for more than 4 cards.
+Refer to http://literator.colin.merkel.is/do7uO for calculations of the clearance for more than 4 cards.
