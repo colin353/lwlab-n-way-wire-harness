@@ -10,6 +10,20 @@ To first order, the expected clearance will be `2 mm`.
 
 According to http://literator.colin.merkel.is/do7uO, the clearance will be `-4 mm` before removing `6 mm` of shoulder on the 50 K stage (stage 3). But this is making a number of simplifying assumptions about the geometry. It may also be necessary to change the geometry of the previous stage. Finally, rather than building a faceplate, it may make sense to use the entire 8-inch outer flange as the basis for Stage 5, reducing the room required for bolts.
 
+## Development Log
+
+### February 18th
+
+*Stage 3*: 
+- increased width by 1.5 inches to accomodate 7 SQUID cards
+- filleted outer edges to afford 1.85 mm of radial clearance to the ISO200 flange
+- potential issue: minimum aluminum thickness reaches 1 mm, may be difficult to machine
+- potential issue: 1.85 mm clearance may be too tight of a tolerance: it is comparable to the thermal contraction of Al
+
+*Stage 4*:
+- expanded to fit with the new size of stage 3
+
+
 LWLab 4-way wire harness
 ========================
 
@@ -25,3 +39,4 @@ The main changes that have been implemented since that version are:
 The clearance between the inner diameter of the ISO200 port and stage 3 is `6.8 mm`
 
 Refer to http://literator.colin.merkel.is/do7uO for calculations of the clearance for more than 4 cards.
+ 
