@@ -1,42 +1,15 @@
 LWLab 7-way wire harness
 ========================
 
-After working on the 4-way design, now I'm extending it to 7 SQUID cards to see if it is possible to make it work. The strategy will be:
+Trying to combine the APEX/SPT style 7x wire harnesses with the HPD104. 
 
-1. Extend stages 1-4 by 0.5 inches per SQUID card
-2. Modify the geometry of stage 3 in order to fit within the ISO200 inner diameter
+### Issues:
 
-To first order, the expected clearance will be `2 mm`. 
-
-According to http://literator.colin.merkel.is/do7uO, the clearance will be `-4 mm` before removing `6 mm` of shoulder on the 50 K stage (stage 3). But this is making a number of simplifying assumptions about the geometry. It may also be necessary to change the geometry of the previous stage. Finally, rather than building a faceplate, it may make sense to use the entire 8-inch outer flange as the basis for Stage 5, reducing the room required for bolts.
-
-## Development Log
-
-### February 18th
-
-*Stage 3*: 
-- increased width by 1.5 inches to accomodate 7 SQUID cards
-- filleted outer edges to afford 1.85 mm of radial clearance to the ISO200 flange
-- potential issue: minimum aluminum thickness reaches 1 mm, may be difficult to machine
-- potential issue: 1.85 mm clearance may be too tight of a tolerance: it is comparable to the thermal contraction of Al
-
-*Stage 4*:
-- expanded to fit with the new size of stage 3
-
-
-LWLab 4-way wire harness
-========================
-
-These are the SolidWorks files for the redesigned wire harness, which came from the original 3-way design. 
-
-The main changes that have been implemented since that version are:
-
-1. Stages 1-4 were widened by 0.5 inches to accomodate an additional PCI slot and SQUID card
-2. Stages 2-3 were expanded vertically by 0.54 inches to give extra space for the 6.25 inch SQUID cards.
-
-## Important parameters
-
-The clearance between the inner diameter of the ISO200 port and stage 3 is `6.8 mm`
-
-Refer to http://literator.colin.merkel.is/do7uO for calculations of the clearance for more than 4 cards.
- 
+1. What is the minimum acceptable clearance between the ISO200 flange inner diameter and stage 3?
+2. Can we avoid machining the existing wire harness?
+3. Is the inner groove of the ISO200 outer k-style flange going to intersect with the o-ring?
+4. Can we accommodate the distances between the planes in the SPT/APEX harness using our own parts?
+5. Can we attach the DSUB feedthrough plate onto the outer flange without problems? Will the O-ring work, and will the RF shielding be OK?
+6. Are we 100% confident that the inner diameter is 7.5’’ (or greater)?
+7. Is the length of of the inner segment of the ISO200 entrance tube long enough to support the nose of stage 3?
+8. Are the assumed SQUID card dimensions correct, or are they incorrect? And how are they incorrect?
